@@ -26,7 +26,6 @@ def cacular():
             lblResultados.config(text=resultados)
 
             lienzo.delete("curva")
-
             #parábola
             #Se usa como referencia el tiempo de vuelo (con paso de 0.5) y no la distancia en el eje x
             #Para ser proporcional al plano cartesiano se divide dentro de 10
