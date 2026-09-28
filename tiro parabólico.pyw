@@ -12,7 +12,6 @@ txtAngulo = Entry(ventana, width=5)
 txtAngulo.place(x=70, y=100)
 
 def cacular():
-    messagebox.showwarning(message="Si utiliza una velocidad inicial muy alta la curva no podrá visualizarse de forma completa.")
     try:
         v0 = float(txtV0.get().strip())
         angulo = math.radians(float(txtAngulo.get().strip()))
@@ -51,7 +50,7 @@ def cacular():
 
 Button(ventana, text="Calcular y graficar", command=cacular).place(x=20, y=150)
 
-lblResultados = Label(ventana, text="Resultados")
+lblResultados = Label(ventana, text="Resultados:\nSi utiliza una \nvelocidad inicial muy \nalta la curva no podrá \nvisualizarse de \nforma completa.")
 lblResultados.place(x=5, y=210)
 
 lienzo = Canvas(ventana, width=450, height=400, bg="lightblue")
